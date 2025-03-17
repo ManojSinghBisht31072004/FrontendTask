@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex">
+        <div class="w-1/5 bg-white h-screen p-5 shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-800">CliniVention</h2>
+            <ul class="mt-5">
+                <li class="py-2 px-4 bg-gray-200 rounded"><i class="fa-solid fa-chart-pie mr-2"></i> Dashboard</li>
+                <li class="py-2 px-4 hover:bg-gray-200 rounded mt-2"><i class="fa-solid fa-user-plus mr-2"></i> Patient</li>
+                <li class="py-2 px-4 hover:bg-gray-200 rounded mt-2"><i class="fa-solid fa-calendar-check mr-2"></i> Appointment</li>
+                <li class="py-2 px-4 hover:bg-gray-200 rounded mt-2"><i class="fa-solid fa-money-check mr-2"></i> Billing</li>
+                <li class="py-2 px-4 hover:bg-gray-200 rounded mt-2"><i class="fa-solid fa-stethoscope mr-2"></i> Doctor</li>
+                <li class="py-2 px-4 hover:bg-gray-200 rounded mt-2"><i class="fa-solid fa-sliders mr-2"></i> Settings</li>
+            </ul>
+        </div>
+
+        <div class="w-4/5 p-5">
+            <div class="flex justify-between items-center bg-white p-4 shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Patient Dashboard</h3>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Add New Patient</button>
+            </div>
+
+            <div class="bg-white p-4 mt-5 shadow-md rounded-lg">
+                <div class="flex items-center justify-between p-4">
+                    <div class="flex items-center">
+                        <input type="text" placeholder="Search" class="border rounded px-4 py-2 mr-2">
+                        <button class="bg-gray-200 text-gray-700 rounded px-4 py-2">Filter</button>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">Calendar</span>
+                        <button class="bg-gray-200 text-gray-700 rounded px-2 py-1 mx-1">&lt;</button>
+                        <span class="mr-2">March 10, 2025</span>
+                        <button class="bg-gray-200 text-gray-700 rounded px-2 py-1 mx-1">&gt;</button>
+                        <span class="mr-2">Today</span>
+                    </div>
+                    <button class="bg-green-500 text-white rounded px-4 py-2"><i class="fa-solid fa-user-plus mr-2"></i>Add New Patient</button>
+                </div>
+
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="p-2 border">PID<i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Name<i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Date of Birth<i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Gender <i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Mobile<i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Email<i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Last Appointment<i class="fa-solid fa-arrows-up-down ml-1"></i></th>
+                            <th class="p-2 border">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td class="p-2 border">CCC.10</td>
+                            <td class="p-2 border">Mr. Manish Kumar</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Male</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">manish@gmail.com</td>
+                            <td class="p-2 border">10-March-2025</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                         <tr class="text-center">
+                            <td class="p-2 border">CCC.9</td>
+                            <td class="p-2 border">Mrs. Rohini Kumar Mishra</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Female</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                         <tr class="text-center">
+                            <td class="p-2 border">CCC.8</td>
+                            <td class="p-2 border">Dummy Name</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Male</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border">10-March-2025</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                         <tr class="text-center">
+                            <td class="p-2 border">CCC.7</td>
+                            <td class="p-2 border">Mrs. Rohini Kumar Mishra</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Female</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                         <tr class="text-center">
+                            <td class="p-2 border">CCC.6</td>
+                            <td class="p-2 border">Dummy Name</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Male</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border">10-March-2025</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                         <tr class="text-center">
+                            <td class="p-2 border">CCC.5</td>
+                            <td class="p-2 border">Mrs. Rohini Kumar Mishra</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Female</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                         <tr class="text-center">
+                            <td class="p-2 border">CCC.4</td>
+                            <td class="p-2 border">Dummy Name</td>
+                            <td class="p-2 border">20-Sep-2002</td>
+                            <td class="p-2 border">Male</td>
+                            <td class="p-2 border">+91 00000 00000</td>
+                            <td class="p-2 border">-</td>
+                            <td class="p-2 border">10-March-2025</td>
+                            <td class="p-2 border"><button class="text-blue-500"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
