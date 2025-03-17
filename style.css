@@ -1,7 +1,4 @@
-/* You can add custom CSS here if needed */
-/* For example, if you want to adjust the spacing or colors */
 
-/* Example: Add some hover effect to table rows */
 table tbody tr:hover {
     background-color: #a09b9b;
 }
